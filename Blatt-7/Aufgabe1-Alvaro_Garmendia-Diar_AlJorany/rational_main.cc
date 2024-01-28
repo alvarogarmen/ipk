@@ -1,7 +1,9 @@
 #include <iostream>
+
 #include "rational.hh"
 
-int main() {
+int main()
+{
     Rational a(1, 2);
     Rational b(3, 4);
 
@@ -73,8 +75,12 @@ int main() {
 
     Rational z(3, -2);
     std::cout << z << " sollte vorne ein Minus haben." << std::endl;
+    std::cout << "In der Aufgabenstellung steht literally 'und der Zähler nie negativ ist.'." << std::endl;
+    std::cout << "Also was soll das sein lol. Wir haben den - beim Nenner gemacht um mit der Aufgabenstellung "
+                 "konsistent zu sein..."
+              << std::endl;
     std::cout << std::endl;
-    Rational err(1,0);
+    Rational err(1, 0);
     std::cout << err << " sollte nach einem Fehler 0 sein." << std::endl;
     std::cout << std::endl;
 
@@ -82,15 +88,21 @@ int main() {
     Rational nonZero(3, 4);
     Rational zero;
 
-    if (nonZero) {
+    if (nonZero)
+    {
         std::cout << "nonZero ist true (nicht gleich 0)" << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "FEHLER: nonZero ist false (gleich 0)" << std::endl;
     }
 
-    if (zero) {
+    if (zero)
+    {
         std::cout << "FEHLER: zero ist true (nicht gleich 0)" << std::endl;
-    } else {
+    }
+    else
+    {
         std::cout << "zero ist false (gleich 0)" << std::endl;
     }
 
